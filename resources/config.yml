@@ -5,7 +5,7 @@
 
 # PureChat version string
 # - string
-version: "1.4.10-6"
+version: "1.4.10-7"
 
 # Enable this if you want to use per-world chat formats / per-world nametags for players
 # - true / false
