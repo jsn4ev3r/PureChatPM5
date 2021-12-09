@@ -23,17 +23,14 @@ Command | Description | Permission
 
 ```
 YAML
----
 
 # PureChat by 64FF00 (xktiverz@gmail.com, @64ff00 for Twitter)
 
+---
+
 # PureChat version string
 # - string
-version: "1.4.0-BETA-04"
-
-# Set default factions plugin for PureChat
-# - FactionsPro / XeviousPE-Factions (§l§9-§8]§b>§7[§cXevious§aTestSrv§7]§b<§8[§9-) / null
-default-factions-plugin: ~
+version: "1.4.10-7"
 
 # Enable this if you want to use per-world chat formats / per-world nametags for players
 # - true / false
@@ -45,24 +42,32 @@ enable-multiworld-chat: false
 # &a: Green, &b: Aqua, &c: Red, &d: Light Purple, &e: Yellow, &f: White
 # &k: Obfuscated, &l: Bold, &m: Strikethrough, &n: Underline, &o: Italic, &r: Reset
 
-# Available PureChat tags: {display_name}, {msg}, {fac_name}, {fac_rank}, {prefix}, {suffix}, {world}
+# Available PureChat tags
+# {display_name} Get the player's username.
+# {msg} Get the player's message.
+# {prefix} Get PurePerms Prefix of the rank.
+# {suffix} Get the PurePerms Suffix of the rank.
+# {world} Get the PurePerms world the player is in.
+
 groups:
   Guest:
-    chat: "&3&l{prefix}&e[Guest]&f&r {display_name} &7> {msg}"
-    nametag: "&3&l{prefix}&e[Guest]&f&r {display_name}"
+    chat: '&7[Guest] {display_name} &7> &f{msg}'
+    nametag: '&7[Guest] &f{display_name}'
     worlds: []
   Admin:
-    chat: "&3&l{prefix}&c[Admin]&f&r {display_name} &7> {msg}"
-    nametag: "&3&l{prefix}&c[Admin]&f&r {display_name}"
+    chat: '&c[Admin]  {display_name} &d>&b {msg}'
+    nametag: '&a[Admin]&e &6{display_name}'
     worlds: []
   Owner:
-    chat: "&3&l{prefix}&a[Owner]&f&r {display_name} &7> {msg}"
-    nametag: "&3&l{prefix}&a[Owner]&f&r {display_name}"
+    chat: '&d[Owner]  &b{display_name} &c>&6> &b{msg}'
+    nametag: '&d[Owner]&c &b{display_name}'
     worlds: []
   OP:
-    chat: "&3&l{prefix}&9[OP]&f&r {display_name} &7> {msg}"
-    nametag: "&3&l{prefix}&9[OP]&f&r {display_name}"
+    chat: '&a[OP] &{prefix}{display_name}{suffix} &c>&6> &f{msg}'
+    nametag: '&a[OP] &b{display_name}'
     worlds: []
+...
+
 ```
 # FAQ
 
