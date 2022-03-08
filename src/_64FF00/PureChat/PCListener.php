@@ -2,7 +2,7 @@
 
 namespace _64FF00\PureChat;
 
-use _64FF00\PurePerms\EventManager\PPGroupChangedEvent;
+use _64FF00\PurePerms\EventManager\PPRankChangedEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\event\player\PlayerJoinEvent;
