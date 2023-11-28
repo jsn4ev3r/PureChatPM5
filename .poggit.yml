@@ -2,7 +2,7 @@
 branches:
 - master
 projects:
-  PureChat:
+  PureChatPM5:
     path: ""
     icon: 863.png
 ...
