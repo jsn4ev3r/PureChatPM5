@@ -1,6 +1,6 @@
 <?php
 
-namespace _64FF00\PureChat;
+namespace jsn4ev3r\PureChatPM5;
 
 use _64FF00\PurePerms\EventManager\PPRankChangedEvent;
 use pocketmine\event\Listener;
@@ -29,7 +29,7 @@ class PCListener implements Listener
     /**
  * @param PureChat $plugin
  */
-    public function __construct(PureChat $plugin)
+    public function __construct(PureChatPM5 $plugin)
     {
         $this->plugin = $plugin;
     }
