@@ -1,6 +1,6 @@
 <?php
 
-namespace _64FF00\PureChat;
+namespace jsn4ev3r\PureChatPM5;
 
 use _64FF00\PurePerms\PPGroup;
 use _64FF00\PurePerms\PurePerms;
@@ -12,7 +12,7 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 use pocketmine\world\World;
 
-class PureChat extends PluginBase
+class PureChatPM5 extends PluginBase
 {
     /*
         PureChat by 64FF00 (Twitter: @64FF00)
